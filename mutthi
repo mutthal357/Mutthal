@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutthal Janta Party (MJP) - Official Website</title>
+    <style>
+        :root {
+            --primary: #ff4500;
+            --secondary: #ffcc00;
+            --dark: #121212;
+            --light: #f4f4f4;
+            --card-bg: #1e1e1e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #000;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .ticker-wrap {
+            background: #000;
+            color: var(--secondary);
+            padding: 0.5rem 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+            font-weight: bold;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate3d(100%, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media(min-width: 768px) {
+            .grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "✊";
+            position: absolute;
+            left: 0;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #444;
+            background-color: #2b2b2b;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #cc3700;
+        }
+
+        .id-card-display {
+            margin-top: 1.5rem;
+            background: linear-gradient(135deg, #2c3e50, #000);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid var(--secondary);
+            text-align: center;
+            display: none;
+        }
+
+        .id-card-display h3 {
+            color: var(--secondary);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .id-details {
+            text-align: left;
+            margin-top: 1rem;
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #0a0a0a;
+            color: #666;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mutthal Janta Party (MJP)</h1>
+        <p>Aane do humko saanson mein, Rasiya batwa denge rasan me! 🏛️✊</p>
+    </header>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            🚨 BREAKING NEWS: MJP Swarm expanding rapidly across social media! • Free high-speed internet data for all members is our top priority! • Join the movement today! 🚨
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            
+            <!-- Left Column: Manifesto & Details -->
+            <main>
+                <div class="card">
+                    <h2>Our Vision & Manifesto</h2>
+                    <p style="margin-bottom: 1rem; font-style: italic; color: #aaa;">"Finally, humne apni nayi party khadi kar di hai! Humara maqsad ekdum saaf hai."</p>
+                    <ul>
+                        <li><strong>Digital Empowerment:</strong> 100GB complimentary night data for uninterrupted streams.</li>
+                        <li><strong>Privacy Protocols:</strong> Automatic history-clearing filters built directly into national ISPs.</li>
+                        <li><strong>Anti-Stress Frameworks:</strong> Mandatory wellness hours across schools, colleges, and corporate offices.</li>
+                        <li><strong>Anti-Defection Stance:</strong> 20-year bans on politicians switching loyalties mid-term.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Frequently Asked Questions</h2>
+                    <p style="margin-top: 0.5rem;"><strong>Q: Is joining MJP free?</strong><br>Yes, membership is 100% free forever. No OTP, no hidden premium tiers.</p>
+                    <p style="margin-top: 1rem;"><strong>Q: What do I get upon registering?</strong><br>You get immediate bragging rights and a unique verifiable digital membership ID card instantly.</p>
+                </div>
+            </main>
+
+            <!-- Right Column: Registration -->
+            <aside>
+                <div class="card">
+                    <h2>Join the Swarm</h2>
+                    <form id="joinForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="e.g., Backbencher No. 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="e.g., single@mjp.org">
+                        </div>
+                        <button type="submit">Generate Member Card</button>
+                    </form>
+
+                    <!-- Generated ID Card Output -->
+                    <div id="idCard" class="id-card-display">
+                        <h3>MJP Official Member</h3>
+                        <div style="font-size: 3rem;">✊</div>
+                        <div class="id-details">
+                            <p><strong>NAME:</strong> <span id="cardName"></span></p>
+                            <p><strong>MEMBER ID:</strong> <span id="cardId"></span></p>
+                            <p><strong>STATUS:</strong> Certified Revolutionist</p>
+                            <p style="color: var(--secondary); margin-top: 0.5rem; text-align: center;">SURVIVE • ADAPT • CONQUER</p>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Mutthal Janta Party. Content generated purely for satire, entertainment, and youth advocacy movements.</p>
+    </footer>
+
+    <script>
+        document.getElementById('joinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const randomId = 'MJP-' + Math.floor(100000 + Math.random() * 900000);
+            
+            document.getElementById('cardName').innerText = name;
+            document.getElementById('cardId').innerText = randomId;
+            
+            document.getElementById('idCard').style.display = 'block';
+            document.getElementById('joinForm').reset();
+        });
+    </script>
+</body>
+</html>
